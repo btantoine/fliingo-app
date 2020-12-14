@@ -12,9 +12,10 @@
 </head>
 
 <body>
+  <div class="spacer s0" id="trigger" class="trigger"></div>
   <div class="intro">
     <h1>Big Trip, with Fliingo</h1>
-    <video src="landing-page-video-animated.mp4"></video>
+    <img id="myimg" class="myimg" src="rotato_frames/animated-landing-page-video Frame 1.png"><br>
   </div>
   <section class="section1">
     <div class="waitlist-banner">
@@ -104,7 +105,206 @@
     integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
     integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+  <!-- <script src="app.js"></script> -->
+
+
+  <script>
+    // define images
+    var images = [
+      "rotato_frames/animated-landing-page-video Frame 1.png",
+      "rotato_frames/animated-landing-page-video Frame 2.png",
+      "rotato_frames/animated-landing-page-video Frame 3.png",
+      "rotato_frames/animated-landing-page-video Frame 4.png",
+      "rotato_frames/animated-landing-page-video Frame 5.png",
+      "rotato_frames/animated-landing-page-video Frame 6.png",
+      "rotato_frames/animated-landing-page-video Frame 7.png",
+      "rotato_frames/animated-landing-page-video Frame 8.png",
+      "rotato_frames/animated-landing-page-video Frame 9.png",
+      "rotato_frames/animated-landing-page-video Frame 10.png",
+      "rotato_frames/animated-landing-page-video Frame 11.png",
+      "rotato_frames/animated-landing-page-video Frame 12.png",
+      "rotato_frames/animated-landing-page-video Frame 13.png",
+      "rotato_frames/animated-landing-page-video Frame 14.png",
+      "rotato_frames/animated-landing-page-video Frame 15.png",
+      "rotato_frames/animated-landing-page-video Frame 16.png",
+      "rotato_frames/animated-landing-page-video Frame 17.png",
+      "rotato_frames/animated-landing-page-video Frame 18.png",
+      "rotato_frames/animated-landing-page-video Frame 19.png",
+      "rotato_frames/animated-landing-page-video Frame 20.png",
+      "rotato_frames/animated-landing-page-video Frame 21.png",
+      "rotato_frames/animated-landing-page-video Frame 22.png",
+      "rotato_frames/animated-landing-page-video Frame 23.png",
+      "rotato_frames/animated-landing-page-video Frame 24.png",
+      "rotato_frames/animated-landing-page-video Frame 25.png",
+      "rotato_frames/animated-landing-page-video Frame 26.png",
+      "rotato_frames/animated-landing-page-video Frame 27.png",
+      "rotato_frames/animated-landing-page-video Frame 28.png",
+      "rotato_frames/animated-landing-page-video Frame 29.png",
+      "rotato_frames/animated-landing-page-video Frame 30.png",
+      "rotato_frames/animated-landing-page-video Frame 31.png",
+      "rotato_frames/animated-landing-page-video Frame 32.png",
+      "rotato_frames/animated-landing-page-video Frame 33.png",
+      "rotato_frames/animated-landing-page-video Frame 34.png",
+      "rotato_frames/animated-landing-page-video Frame 35.png",
+      "rotato_frames/animated-landing-page-video Frame 36.png",
+      "rotato_frames/animated-landing-page-video Frame 37.png",
+      "rotato_frames/animated-landing-page-video Frame 38.png",
+      "rotato_frames/animated-landing-page-video Frame 39.png",
+      "rotato_frames/animated-landing-page-video Frame 41.png",
+      "rotato_frames/animated-landing-page-video Frame 42.png",
+      "rotato_frames/animated-landing-page-video Frame 43.png",
+      "rotato_frames/animated-landing-page-video Frame 44.png",
+      "rotato_frames/animated-landing-page-video Frame 45.png",
+      "rotato_frames/animated-landing-page-video Frame 46.png",
+      "rotato_frames/animated-landing-page-video Frame 47.png",
+      "rotato_frames/animated-landing-page-video Frame 48.png",
+      "rotato_frames/animated-landing-page-video Frame 49.png",
+      "rotato_frames/animated-landing-page-video Frame 51.png",
+      "rotato_frames/animated-landing-page-video Frame 52.png",
+      "rotato_frames/animated-landing-page-video Frame 53.png",
+      "rotato_frames/animated-landing-page-video Frame 54.png",
+      "rotato_frames/animated-landing-page-video Frame 55.png",
+      "rotato_frames/animated-landing-page-video Frame 56.png",
+      "rotato_frames/animated-landing-page-video Frame 57.png",
+      "rotato_frames/animated-landing-page-video Frame 58.png",
+      "rotato_frames/animated-landing-page-video Frame 59.png",
+      "rotato_frames/animated-landing-page-video Frame 61.png",
+      "rotato_frames/animated-landing-page-video Frame 62.png",
+      "rotato_frames/animated-landing-page-video Frame 63.png",
+      "rotato_frames/animated-landing-page-video Frame 64.png",
+      "rotato_frames/animated-landing-page-video Frame 65.png",
+      "rotato_frames/animated-landing-page-video Frame 66.png",
+      "rotato_frames/animated-landing-page-video Frame 67.png",
+      "rotato_frames/animated-landing-page-video Frame 68.png",
+      "rotato_frames/animated-landing-page-video Frame 69.png",
+      "rotato_frames/animated-landing-page-video Frame 71.png",
+      "rotato_frames/animated-landing-page-video Frame 72.png",
+      "rotato_frames/animated-landing-page-video Frame 73.png",
+      "rotato_frames/animated-landing-page-video Frame 74.png",
+      "rotato_frames/animated-landing-page-video Frame 75.png",
+      "rotato_frames/animated-landing-page-video Frame 76.png",
+      "rotato_frames/animated-landing-page-video Frame 77.png",
+      "rotato_frames/animated-landing-page-video Frame 78.png",
+      "rotato_frames/animated-landing-page-video Frame 79.png",
+      "rotato_frames/animated-landing-page-video Frame 81.png",
+      "rotato_frames/animated-landing-page-video Frame 82.png",
+      "rotato_frames/animated-landing-page-video Frame 83.png",
+      "rotato_frames/animated-landing-page-video Frame 84.png",
+      "rotato_frames/animated-landing-page-video Frame 85.png",
+      "rotato_frames/animated-landing-page-video Frame 86.png",
+      "rotato_frames/animated-landing-page-video Frame 87.png",
+      "rotato_frames/animated-landing-page-video Frame 88.png",
+      "rotato_frames/animated-landing-page-video Frame 89.png",
+      "rotato_frames/animated-landing-page-video Frame 91.png",
+      "rotato_frames/animated-landing-page-video Frame 92.png",
+      "rotato_frames/animated-landing-page-video Frame 93.png",
+      "rotato_frames/animated-landing-page-video Frame 94.png",
+      "rotato_frames/animated-landing-page-video Frame 95.png",
+      "rotato_frames/animated-landing-page-video Frame 96.png",
+      "rotato_frames/animated-landing-page-video Frame 97.png",
+      "rotato_frames/animated-landing-page-video Frame 98.png",
+      "rotato_frames/animated-landing-page-video Frame 99.png",
+      "rotato_frames/animated-landing-page-video Frame 101.png",
+      "rotato_frames/animated-landing-page-video Frame 102.png",
+      "rotato_frames/animated-landing-page-video Frame 103.png",
+      "rotato_frames/animated-landing-page-video Frame 104.png",
+      "rotato_frames/animated-landing-page-video Frame 105.png",
+      "rotato_frames/animated-landing-page-video Frame 106.png",
+      "rotato_frames/animated-landing-page-video Frame 107.png",
+      "rotato_frames/animated-landing-page-video Frame 108.png",
+      "rotato_frames/animated-landing-page-video Frame 109.png",
+      "rotato_frames/animated-landing-page-video Frame 110.png",
+      "rotato_frames/animated-landing-page-video Frame 112.png",
+      "rotato_frames/animated-landing-page-video Frame 113.png",
+      "rotato_frames/animated-landing-page-video Frame 114.png",
+      "rotato_frames/animated-landing-page-video Frame 115.png",
+      "rotato_frames/animated-landing-page-video Frame 116.png",
+      "rotato_frames/animated-landing-page-video Frame 117.png",
+      "rotato_frames/animated-landing-page-video Frame 118.png",
+      "rotato_frames/animated-landing-page-video Frame 119.png",
+      "rotato_frames/animated-landing-page-video Frame 120.png",
+      "rotato_frames/animated-landing-page-video Frame 121.png",
+      "rotato_frames/animated-landing-page-video Frame 122.png",
+      "rotato_frames/animated-landing-page-video Frame 123.png",
+      "rotato_frames/animated-landing-page-video Frame 124.png",
+      "rotato_frames/animated-landing-page-video Frame 125.png",
+      "rotato_frames/animated-landing-page-video Frame 126.png",
+      "rotato_frames/animated-landing-page-video Frame 127.png",
+      "rotato_frames/animated-landing-page-video Frame 128.png",
+      "rotato_frames/animated-landing-page-video Frame 129.png",
+      "rotato_frames/animated-landing-page-video Frame 131.png",
+      "rotato_frames/animated-landing-page-video Frame 132.png",
+      "rotato_frames/animated-landing-page-video Frame 133.png",
+      "rotato_frames/animated-landing-page-video Frame 134.png",
+      "rotato_frames/animated-landing-page-video Frame 135.png",
+      "rotato_frames/animated-landing-page-video Frame 136.png",
+      "rotato_frames/animated-landing-page-video Frame 137.png",
+      "rotato_frames/animated-landing-page-video Frame 138.png",
+      "rotato_frames/animated-landing-page-video Frame 139.png",
+      "rotato_frames/animated-landing-page-video Frame 140.png",
+      "rotato_frames/animated-landing-page-video Frame 141.png",
+      "rotato_frames/animated-landing-page-video Frame 142.png",
+      "rotato_frames/animated-landing-page-video Frame 143.png",
+      "rotato_frames/animated-landing-page-video Frame 144.png",
+      "rotato_frames/animated-landing-page-video Frame 145.png",
+      "rotato_frames/animated-landing-page-video Frame 146.png",
+      "rotato_frames/animated-landing-page-video Frame 147.png",
+      "rotato_frames/animated-landing-page-video Frame 148.png",
+      "rotato_frames/animated-landing-page-video Frame 149.png",
+      "rotato_frames/animated-landing-page-video Frame 151.png",
+      "rotato_frames/animated-landing-page-video Frame 152.png",
+      "rotato_frames/animated-landing-page-video Frame 153.png",
+      "rotato_frames/animated-landing-page-video Frame 154.png",
+    ];
+
+    // TweenMax can tween any property of any object. We use this object to cycle through the array
+    var obj = { curImg: 0 };
+    const intro = document.querySelector(".intro");
+    const trigger = document.querySelector(".trigger");
+
+    // create tween
+    var tween = TweenMax.to(obj, 0.5,
+      {
+        curImg: images.length - 1,	// animate propery curImg to number of images
+        roundProps: "curImg",				// only integers so it can be used as an array index
+        repeat: 3,									// repeat 3 times
+        immediateRender: true,			// load first image automatically
+        ease: Linear.easeNone,			// show every image the same ammount of time
+        onUpdate: function () {
+          document.getElementById("myimg").src = images[obj.curImg];
+          // document.querySelector(".myimg").attr("src", images[obj.curImg]); // set the image source
+        }
+      }
+    );
+
+    // init controller
+    var controller = new ScrollMagic.Controller();
+    const text = intro.querySelector("h1");
+    const end = intro.querySelector("h1");
+
+    // build scene
+    var scene = new ScrollMagic.Scene({ triggerElement: intro, duration: 3500, triggerHook: 0 })
+      .setTween(tween)
+      .setPin(intro)
+      .addTo(controller);
+
+    const textAnim = TweenMax.fromTo(text, 2, { opacity: 1 }, { opacity: 0 });
+
+    let scene2 = new ScrollMagic.Scene({
+      duration: 2000,
+      triggerElement: intro,
+      triggerHook: 0
+    })
+      .setTween(textAnim)
+      .addTo(controller);
+
+    // handle form change
+    // $("form.move input[name=duration]:radio").change(function () {
+    //   scene.duration($(this).val());
+    // });
+  </script>
+
+
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 
@@ -134,8 +334,6 @@
       }
     }
   </script>
-
-
 </body>
 
 </html>

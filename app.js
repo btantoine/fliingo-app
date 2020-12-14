@@ -17,7 +17,6 @@ let scene = new ScrollMagic.Scene({
   // .addIndicators()
   .setPin(intro)
   .addTo(controller);
-
 //Text Animation
 const textAnim = TweenMax.fromTo(text, 2, { opacity: 1 }, { opacity: 0 });
 
