@@ -102,6 +102,12 @@ body {
   line-height: 1.1em;
 }
 
+@media screen and (max-width: 992px) {
+  .section1 h2 {
+    width: 90%;
+  }
+}
+
 .section1 h2 .intro1 {
   color: #2a4ea9;
 }
@@ -121,6 +127,11 @@ body {
   font-size: 20px;
   line-height: 1.5em;
 }
+@media screen and (max-width: 992px) {
+  .section1 p {
+    width: 95%;
+  }
+}
 
 .section1 p .fliingo {
   font-size: 30px;
@@ -135,11 +146,15 @@ body {
   margin-right: auto;
   width: 30%;
 }
+@media screen and (max-width: 992px) {
+  .section1 img {
+    width: 50%;
+  }
+}
 
 .section2 {
   background-color: black;
   color: white;
-  /* padding-bottom: 100px; */
 }
 
 .section2 h2 {
@@ -152,6 +167,11 @@ body {
   line-height: 1em;
   padding-top: 100px;
 }
+@media screen and (max-width: 992px) {
+  .section2 h2 {
+    width: 90%;
+  }
+}
 
 .section2 p {
   width: 50%;
@@ -160,12 +180,22 @@ body {
   font-size: 20px;
   line-height: 1.5em;
 }
+@media screen and (max-width: 992px) {
+  .section2 p {
+    width: 90%;
+  }
+}
 
 .section2 img {
   display: block;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 992px) {
+  .section2 img {
+    width: 95%;
+  }
 }
 
 .section3 {
@@ -183,13 +213,22 @@ body {
   line-height: 1em;
   padding-top: 50px;
 }
-
+@media screen and (max-width: 992px) {
+  .section3 h2 {
+    width: 90%;
+  }
+}
 .section3 p {
   width: 50%;
   margin: 0 auto;
   margin-top: 2em;
   font-size: 20px;
   line-height: 1.5em;
+}
+@media screen and (max-width: 992px) {
+  .section3 p {
+    width: 90%;
+  }
 }
 
 .section3 .input-email {
@@ -209,6 +248,11 @@ body {
   align-items: center;
   margin-bottom: 0.5em;
 }
+@media screen and (max-width: 992px) {
+  .section3 .input-email {
+    width: 90%;
+  }
+}
 
 .section3 .form-options {
   /* display: block; */
@@ -216,6 +260,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .section3 .form-options {
+    width: 90%;
+  }
 }
 
 .section3 .form-control .img {
@@ -245,6 +294,12 @@ body {
   margin-top: 2em;
   font-size: 10px;
 }
+@media screen and (max-width: 992px) {
+  .section3 .small-info {
+    width: 90%;
+  }
+}
+
 .section3 a {
   color: white;
 }
@@ -277,6 +332,11 @@ body {
   font-size: 2em;
   line-height: 1.1em;
 }
+@media screen and (max-width: 992px) {
+  .section4 h2 {
+    width: 90%;
+  }
+}
 .section4 .title {
   color: #2a4ea9;
 }
@@ -285,6 +345,11 @@ body {
   position: relative;
   bottom: -60px;
   left: 40%;
+}
+@media screen and (max-width: 992px) {
+  .section4 img {
+    left: 30%;
+  }
 }
 
 .section5 {
@@ -302,6 +367,11 @@ body {
   line-height: 1.1em;
   color: #883baa;
 }
+@media screen and (max-width: 992px) {
+  .section5 h2 {
+    width: 90%;
+  }
+}
 
 .section5 .text1 {
   padding-top: 50px;
@@ -311,6 +381,11 @@ body {
   font-size: 1.8em;
   line-height: 1.1em;
 }
+@media screen and (max-width: 992px) {
+  .section5 .text1 {
+    width: 90%;
+  }
+}
 .section5 .text2 {
   padding-top: 50px;
   margin-left: auto;
@@ -319,7 +394,11 @@ body {
   font-size: 1.5em;
   line-height: 1.1em;
 }
-
+@media screen and (max-width: 992px) {
+  .section5 .text2 {
+    width: 90%;
+  }
+}
 .section6 .hero-clip {
   overflow-x: hidden;
   background-color: #141414;
@@ -362,6 +441,11 @@ body {
   line-height: 1em;
   padding-top: 50px;
 }
+@media screen and (max-width: 992px) {
+  .section7 h2 {
+    width: 100%;
+  }
+}
 .section7 p {
   text-align: center;
   width: 50%;
@@ -369,6 +453,11 @@ body {
   margin-top: 2em;
   font-size: 20px;
   line-height: 1.5em;
+}
+@media screen and (max-width: 992px) {
+  .section7 p {
+    width: 90%;
+  }
 }
 
 footer {
