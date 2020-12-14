@@ -12,14 +12,32 @@ body {
   height: 100vh;
 }
 
-.intro #myimg {
+.intro .myimg {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
+.intro .image-static {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .intro .myimg {
+    display: none;
+  }
+}
+@media screen and (min-width: 993px) {
+  .intro .image-static {
+    display: none;
+  }
+}
+
 .intro h1 {
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 48%;
   transform: translate(-50%, -50%);
@@ -29,6 +47,26 @@ body {
   background-color: #2a4ea9;
   padding: 20px;
   border-radius: 10px;
+  width: 60%;
+}
+@media screen and (max-width: 662px) {
+  .intro h1 {
+    width: 70%;
+    background-color: white;
+    color: #2a4ea9;
+    font-weight: bold;
+  }
+  .intro .image-static {
+    display: none;
+  }
+  .intro {
+    background-color: #2a4ea9;
+  }
+}
+@media screen and (max-width: 492px) {
+  .intro h1 {
+    width: 90%;
+  }
 }
 
 .section1 {
@@ -69,11 +107,11 @@ body {
 }
 
 .section1 h2 .intro2 {
-  color: #ED217C;
+  color: #ed217c;
 }
 
 .section1 h2 .intro3 {
-  color: #FF9B71;
+  color: #ff9b71;
 }
 
 .section1 p {
@@ -87,7 +125,7 @@ body {
 .section1 p .fliingo {
   font-size: 30px;
   font-weight: 900;
-  color: #ED217C;
+  color: #ed217c;
 }
 
 .section1 img {
@@ -138,7 +176,7 @@ body {
 }
 
 .section3 h2 {
-  color: #FF9B71;
+  color: #ff9b71;
   width: 50%;
   margin: 0 auto;
   font-size: 3.25em;
@@ -228,7 +266,7 @@ body {
 }
 
 .section4 {
-  background-image: radial-gradient(circle at 100%, #2a4ea9, #ED217C, #FF9B71);
+  background-image: radial-gradient(circle at 100%, #2a4ea9, #ed217c, #ff9b71);
   color: white;
 }
 .section4 h2 {
@@ -236,7 +274,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  font-size: 2.0em;
+  font-size: 2em;
   line-height: 1.1em;
 }
 .section4 .title {
@@ -260,7 +298,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  font-size: 3.0em;
+  font-size: 3em;
   line-height: 1.1em;
   color: #883baa;
 }
@@ -308,7 +346,6 @@ body {
   margin-bottom: -6em;
   margin-left: 25%;
 }
-
 
 .section7 {
   background-color: #141414;
