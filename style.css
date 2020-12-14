@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Baloo Thambi 2", cursive;
 }
 
 .intro {
@@ -48,6 +48,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   width: 60%;
+  font-weight: bold;
 }
 @media screen and (max-width: 662px) {
   .intro h1 {
