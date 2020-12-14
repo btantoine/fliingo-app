@@ -65,15 +65,15 @@ body {
 }
 
 .section1 h2 .intro1 {
-  color: #faa549;
+  color: #2a4ea9;
 }
 
 .section1 h2 .intro2 {
-  color: #f75851;
+  color: #ED217C;
 }
 
 .section1 h2 .intro3 {
-  color: #b8d1f2;
+  color: #FF9B71;
 }
 
 .section1 p {
@@ -87,7 +87,7 @@ body {
 .section1 p .fliingo {
   font-size: 30px;
   font-weight: 900;
-  color: #f75851;
+  color: #ED217C;
 }
 
 .section1 img {
@@ -105,7 +105,7 @@ body {
 }
 
 .section2 h2 {
-  background: linear-gradient(45deg, #ff0061, #f75851, #faa549, #3896d3, #b8d1f2);
+  background-image: linear-gradient(to right top, #2a4ea9, #883baa, #cc008d, #f60057, #ff0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 50%;
@@ -138,7 +138,7 @@ body {
 }
 
 .section3 h2 {
-  color: white;
+  color: #FF9B71;
   width: 50%;
   margin: 0 auto;
   font-size: 3.25em;
@@ -228,7 +228,7 @@ body {
 }
 
 .section4 {
-  background-image: radial-gradient(circle at 100%, #FD755E, #FEC129, #57E9FE);
+  background-image: radial-gradient(circle at 100%, #2a4ea9, #ED217C, #FF9B71);
   color: white;
 }
 .section4 h2 {
@@ -240,7 +240,7 @@ body {
   line-height: 1.1em;
 }
 .section4 .title {
-  color: #f75851;
+  color: #2a4ea9;
 }
 .section4 img {
   width: 300px;
@@ -262,6 +262,7 @@ body {
   width: 50%;
   font-size: 3.0em;
   line-height: 1.1em;
+  color: #883baa;
 }
 
 .section5 .text1 {
@@ -286,16 +287,13 @@ body {
   background-color: #141414;
 }
 .section6 .gradient {
-  /* background: radial-gradient(circle at 100%, #FD755E, #FEC129, #57E9FE); */
-  /* background-image: linear-gradient(45deg, #FF0061, #F75851, #FAA549, #3896D3, #B8D1F2); */
-  /* background-color: black; */
   overflow-y: visible;
 }
 .section6 .hero {
   margin-top: 7em;
   margin-bottom: 6em;
   overflow-y: visible;
-  background-image: linear-gradient(45deg, #FF0061, #F75851, #FAA549, #3896D3, #B8D1F2);
+  background-image: linear-gradient(45deg, #2a4ea9, #9350a6, #ce5994, #f1747f, #ff9b71);
 }
 .section6 .hero-container.mac-window {
   max-width: 1000px;
