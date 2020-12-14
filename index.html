@@ -68,7 +68,8 @@
 
   <section class="section7">
     <h2>And much more</h2>
-    <p>That was just a peek at three features from Fliingo: Join the newsletter to get more information about the futur features</p>
+    <p>That was just a peek at three features from Fliingo: Join the newsletter to get more information about the futur
+      features</p>
   </section>
 
   <section class="section3">
@@ -76,17 +77,19 @@
     <p>Demand for Fliingo App Newsletter. Our beta is on the way, but you have to wait a little before to try it. In
       the mid-time, you can still join the waitlist to be notified when the app will come up. We hope to have the beta
       for March 2021 and the full release slated for 2021.</p>
-    <input class="input-email" type="email" placeholder="Your email" required id="email" />
-    <div class="form-options">
-      <label class="form-control"><span>Mac</span><input class="input-checkox" type="checkbox" id="mac"></label>
-      <label class="form-control"><span>ipad</span><input class="input-checkox" type="checkbox" id="ipad"></label>
-      <label class="form-control"><span>iphone</span><input class="input-checkox" type="checkbox" id="iphone"></label>
-    </div>
-    <p class="small-info">Just so you know, by submitting these details you're okay for us (Fliingo) to send you
-      occasional updates
-      about the App Fliingo - don't worry, no spam. Take a look at our <a href="https://www.fliingo.com/privacy"
-        target="_blank">Privacy Policy</a> for more details.</p><br />
-    <span class="submit">Submit</span>
+    <form name="myForm" method="post">
+      <input class="input-email" type="email" name="email" placeholder="Your email" required id="email" />
+      <div class="form-options">
+        <label class="form-control"><span>Mac</span><input class="input-checkox" type="checkbox" id="mac"></label>
+        <label class="form-control"><span>ipad</span><input class="input-checkox" type="checkbox" id="ipad"></label>
+        <label class="form-control"><span>iphone</span><input class="input-checkox" type="checkbox" id="iphone"></label>
+      </div>
+      <p class="small-info">Just so you know, by submitting these details you're okay for us (Fliingo) to send you
+        occasional updates
+        about the App Fliingo - don't worry, no spam. Take a look at our <a href="https://www.fliingo.com/privacy"
+          target="_blank">Privacy Policy</a> for more details.</p><br />
+      <span class="submit" onclick="validateForm()">Submit</span>
+    </form>
   </section>
 
   <footer>
@@ -102,6 +105,37 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
     integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
   <script src="app.js"></script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+    function validateForm() {
+      console.log("hello")
+      var email = document.forms["myForm"]["email"].value;
+      var mac = document.getElementById("mac").checked
+      var ipad = document.getElementById("ipad").checked
+      var iphone = document.getElementById("iphone").checked
+      if (email == "") {
+        alert("email must be filled out");
+        return false;
+      }
+      else {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "",
+          Password: "",
+          To: "",
+          From: "",
+          Subject: "Hello",
+          Body: "Hello guys",
+        }).then(
+          message => alert("mail sent successfully => ", message)
+        );
+      }
+    }
+  </script>
+
+
 </body>
 
 </html>
