@@ -91,6 +91,16 @@ body {
 .waitlist-banner-text-for-coming-soon {
   font-size: 20px;
 }
+@media screen and (max-width: 992px) {
+  .waitlist-banner {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+  }
+  .btn-to-join-bloc {
+    margin-top: 30px;
+  }
+}
 .btn-to-join {
   border-radius: 40px;
   border: 1px white solid;
@@ -356,7 +366,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   .section4 img {
-    left: 30%;
+    left: 10%;
   }
 }
 
