@@ -108,7 +108,8 @@ body {
 
 @media screen and (max-width: 992px) {
   .section1 h2 {
-    width: 90%;
+    width: 100%;
+    font-size: 2.7em;
   }
 }
 
@@ -174,6 +175,7 @@ body {
 @media screen and (max-width: 992px) {
   .section2 h2 {
     width: 90%;
+    font-size: 2.7em;
   }
 }
 
@@ -220,6 +222,7 @@ body {
 @media screen and (max-width: 992px) {
   .section3 h2 {
     width: 90%;
+    font-size: 2.7em;
   }
 }
 .section3 p {
@@ -254,7 +257,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   .section3 .input-email {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -267,7 +270,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   .section3 .form-options {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -339,6 +342,7 @@ body {
 @media screen and (max-width: 992px) {
   .section4 h2 {
     width: 90%;
+    font-size: 2.7em;
   }
 }
 .section4 .title {
@@ -374,6 +378,7 @@ body {
 @media screen and (max-width: 992px) {
   .section5 h2 {
     width: 90%;
+    font-size: 2.7em;
   }
 }
 
@@ -448,6 +453,7 @@ body {
 @media screen and (max-width: 992px) {
   .section7 h2 {
     width: 100%;
+    font-size: 2.7em;
   }
 }
 .section7 p {
