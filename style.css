@@ -228,6 +228,7 @@ body {
   font-size: 3.25em;
   line-height: 1em;
   padding-top: 50px;
+  text-align: center;
 }
 @media screen and (max-width: 992px) {
   .section3 h2 {
