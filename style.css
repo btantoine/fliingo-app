@@ -8,6 +8,10 @@ body {
   font-family: "Baloo Thambi 2", cursive;
 }
 
+.white {
+  color: white;
+}
+
 .intro {
   height: 100vh;
 }
